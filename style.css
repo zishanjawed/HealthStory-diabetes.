@@ -1,0 +1,283 @@
+#header {
+    position: relative;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+#header svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#show_as_letter {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+body {
+    background-color: #f7fafe;
+}
+
+#basic_info {
+    display: flex;
+}
+
+.info {
+    flex: 1;
+}
+
+.info p {
+    margin: 0.3em
+}
+
+.hading {
+    background-color: #10b7e6;
+    height: 40px;
+    width: fit-content;
+}
+
+.result {
+    background-color: #E0E0E0;
+    padding: 0.6rem;
+    margin-top: 15px;
+}
+
+.graph {
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.range {
+    height: 60px;
+    width: 300px;
+    background-color: black;
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.low_range {
+    background-color: darkred;
+    margin-right: 20px;
+}
+
+.normal_range {
+    background-color: olive;
+    margin-right: 20px;
+}
+
+.high_range {
+    background-color: darkred;
+}
+
+.glu {
+    width: 50%;
+    background: #E0E0E0;
+    padding: 0.5em;
+    margin-top: 20px;
+}
+
+.glu h2 span {
+    flex: 1;
+}
+
+.glu h2 span .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: olive;
+    margin-right: 8px;
+    float: left;
+    margin-top: 5px;
+}
+
+#pakage_name {
+    margin-left: 1em;
+}
+
+#ref_by {
+    margin-left: 5em;
+}
+
+#date {
+    margin-left: 6em;
+}
+
+.circle_normal {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: olive;
+    margin-right: 8px;
+    float: left;
+    margin-top: 5px;
+    background-color: olive;
+}
+
+.circle_denger {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: darkred!important;
+    margin-right: 8px;
+    float: left;
+    margin-top: 5px;
+}
+
+#suger_blood_status {
+    margin-left: 470px;
+}
+
+#estimated_average_plasma_glucose_status {
+    margin-left: 300px;
+}
+
+#random_blood_status {
+    margin-left: 470px;
+}
+
+.irs-line {
+    height: 25px;
+    position: relative;
+}
+
+.irs-line:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(darkred, darkred) 0px 0/39% 100%, linear-gradient(olive, olive) 268px 0/28% 100%, linear-gradient(darkred, darkred)100% 0/311px 100%;
+    /*                            ^start  ^width */
+    background-repeat: no-repeat;
+}
+
+.show_graph {
+    width: 804px;
+    height: 70px;
+    margin-left: 100px;
+}
+
+.low {
+    margin-left: 150px;
+}
+
+.normal {
+    margin-left: 200px;
+}
+
+.high {
+    margin-left: 200px;
+}
+
+irs-from,
+.irs-to,
+.irs-single {
+    height: 20px;
+}
+
+.two_result_at_once {
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 300px;
+    margin-top: 10px;
+}
+
+.two_result_at_once>div {
+    margin: 10px;
+    margin-top: 10px;
+}
+
+#glycosylated_haemoglobin_section {
+    flex: 1;
+}
+
+#glucose_in_urine_result_section {
+    flex: 1;
+    width: 300px;
+    margin-left: 0px;
+}
+
+#glycosylated_haemoglobin_result_section {
+    flex: 1;
+    width: 300px;
+    margin-right: 0px;
+}
+
+#show_graph_glycosylated .irs-line:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(darkred, darkred) 0px 0/19% 100%, linear-gradient(olive, olive) 268px 0/28% 100%, linear-gradient(darkred, darkred)100% 0/311px 100%;
+    /*                            ^start  ^width */
+    background-repeat: no-repeat;
+}
+
+.low_glycosylated {
+    margin-left: 20px;
+}
+
+.normal_glycosylated {
+    margin-left: 250px;
+}
+
+.high_glycosylated {
+    margin-left: 100px;
+}
+
+footer {
+    margin-top: 20px;
+    height: 50px;
+    background: #3a65d5;
+}
+
+.advice {
+    display: flex;
+}
+
+.about_test {
+    flex: 1;
+    width: 300px;
+}
+
+.diabetes_myths {
+    flex: 1;
+}
+
+.two_myths {
+    display: flex;
+    margin-top: 10px;
+    margin: 10px;
+}
+
+.myths {
+    margin-left: 10px;
+}
+
+.second_myth {
+    margin-top: 20px;
+}

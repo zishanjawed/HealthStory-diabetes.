@@ -1,0 +1,160 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/js/ion.rangeSlider.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/css/ion.rangeSlider.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/css/ion.rangeSlider.skinFlat.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Diabetes</title>
+
+
+</head>
+
+<body>
+    <div id="show_as_letter">
+        <div id="header">
+            <svg viewbox="0 0 100 20" preserveAspectRatio="none">
+          <path fill="#3a65d5" d="M0 0 H100 V10 L52.5 19.5 Q50 20 47.5 19.5 L0 10z" />
+        </svg>
+        </div>
+        <img src="./image/logo-removebg-preview.png" alt="">
+
+        <h1><strong>Diabetes Story</strong></h1>
+        <hr>
+        <div id="basic_info">
+            <div class="info">
+                <p>PATIENT</p>
+                <p id="name">Dummy</p>
+                <p id="gender_year">Male, years old</p>
+            </div>
+            <div class="info">
+                <p>DATE <span id="date">10-01-2020</span></p>
+                <p>REF. BY <span id="ref_by">Self</span> </p>
+                <p>PACKAGE NAME <span id="pakage_name">Welness</span> </p>
+            </div>
+            <div class="info">
+                <img src="./image/barcode-removebg-preview.png" alt="">
+            </div>
+
+        </div>
+
+        <hr>
+        <div id="about">
+            <div class="hading">
+                <h1>About Diabetes Story</h1>
+            </div>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium fugiat consequuntur ipsam ad reprehenderit. Facilis inventore beatae animi qui debitis molestiae modi nisi officia, maxime rem officiis iusto, sed tenetur.
+            </p>
+        </div>
+        <div class="hading">
+            <h1>Your Result</h1>
+        </div>
+        <div class="result" id="blood_sugar_result_section" style="display: none;">
+            <h2><strong>Blood Sugar (Fasting): <span id="blood_sugar_result">75</span>  mg/dL</strong>
+                <span><span id="suger_blood_circle" class="circle_normal"></span><span id="suger_blood_status">NORMAL</span> </span>
+            </h2>
+            <p>The amount of glucose in your blood continuously changes - it sometimes goes up and sometimes comes down. But that depends on a lot of things. For example, your food timings affect the amount of glucose. That is why fasting is required for
+                this test.</p>
+
+            <div class="show_graph">
+                <input type="text" class="js-range-slider" id="blood_sugar_range" name="my_range" value="70" />
+                <p><span class="low">Low</span><span class="normal">Normal</span><span class="high">High</span></p>
+            </div>
+
+        </div>
+        <div class="result" id="random_blood_result_section" style="display: none;">
+            <h2><strong>Random Blood Glucose : <span id="random_blood_result">75</span>  mg/dL</strong>
+                <span><span id="random_blood_circle" class="circle_normal"></span><span id="random_blood_status">NORMAL</span> </span>
+            </h2>
+            <p>The amount of glucose in your blood continuously changes - it sometimes goes up and sometimes comes down. But that depends on a lot of things. For example, your food timings affect the amount of glucose. That is why fasting is required for
+                this test.</p>
+
+            <div class="show_graph">
+                <input type="text" class="random_blood_slider" id="random_blood_range" name="my_range" value="70" />
+                <p><span class="low">Low</span><span class="normal">Normal</span><span class="high">High</span></p>
+            </div>
+
+        </div>
+        <div class="two_result_at_once">
+            <div class="result" id="glucose_in_urine_result_section" style="display: none;">
+                <h2><strong>Glucose in Urine: <span id="glucose_in_urine_result"></span> </strong>
+                    <span><span id="glucose_in_urine_result_circle" class="circle_normal"></span><span id="glucose_in_urine_result_status">NORMAL</span> </span>
+                </h2>
+                <p id="glucose_in_urine_message">"NEGATIVE" means good - it means that Glucose was not found in your urine - like for a normal, healthyperson.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, ad! Mollitia vitae, pariatur nostrum corporis nesciunt alias nisi itaque sunt dolor at quas odit voluptate provident quod numquam et similique?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, vero repellendus necessitatibus fugiat autem mollitia esse recusandae cupiditate expedita. Provident cupiditate nemo amet quod nihil ducimus est labore eius inventore.</p>
+            </div>
+            <div class="result" id="glycosylated_haemoglobin_result_section" style="display: none;">
+                <h2><strong>HbA1C (Glycosylated haemoglobin) : <span id="glycosylated_haemoglobin_result">75</span>  %</strong>
+                    <span><span id="glycosylated_haemoglobin_circle" class="circle_normal"></span><span id="glycosylated_haemoglobin_result_status">NORMAL</span> </span>
+                </h2>
+                <p>The most common test in this panel is HbA1c - "Hb" stands for haemoglobin and "A1c" is one of the different forms of haemoglobin. This test tells you how much glucose there was in your blood in the last 2-3 months.</p>
+
+                <div class="show_graph_glycosylated">
+                    <input type="text" id="glycosylated_haemoglobin_range" name="my_range" value="70" />
+                    <p><span class="low_glycosylated">Low</span><span class="normal_glycosylated">Normal</span><span class="high_glycosylated">High</span></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="result" id="estimated_average_plasma_glucose_result_section" style="display: none;">
+            <h2><strong>Estimated Average Plasma Glucose : <span id="estimated_average_plasma_glucose_result">75</span>  mg/dL</strong>
+                <span><span id="estimated_average_plasma_glucose_circle" class="circle_normal"></span><span id="estimated_average_plasma_glucose_status">NORMAL</span> </span>
+            </h2>
+            <p>The amount of glucose in your blood continuously changes - it sometimes goes up and sometimes comes down. But that depends on a lot of things. For example, your food timings affect the amount of glucose. That is why fasting is required for
+                this test.</p>
+
+            <div class="show_graph">
+                <input type="text" class="estimated_average_plasma_glucose_slider" id="estimated_average_plasma_glucose_range" name="my_range" value="70" />
+                <p><span class="low">Low</span><span class="normal">Normal</span><span class="high">High</span></p>
+            </div>
+
+        </div>
+        <div class="advice">
+            <div class="about_test">
+                <div class="hading">
+                    <h1>Importance of test</h1>
+                </div>
+                <img src="./image/advice-removebg-preview.png" alt="" style="margin-left: 0px;">
+                <p>Out of 10 Indians who already have diabetes, 5 of <br> them don't even know that they have diabetes. <br> Congratulations on getting tested.</p>
+            </div>
+            <div class="diabetes_myths">
+                <div class="hading">
+                    <h1>Diabetes Myths</h1>
+                </div>
+                <div class="two_myths">
+                    <div class="icons">
+                        <img src="./image/suger-removebg-preview.png" alt="">
+                    </div>
+                    <div class="myths">
+                        <p><strong>Does diabetes happen ONLY because of sugar?</strong> No. If you don't eat sugar or sweets, but still eat a lot of unhealthy foods, you can gain too much weight. That can also lead to diabetes.</p>
+                    </div>
+
+                </div>
+                <div class="two_myths second_myth">
+                    <div class="icons">
+                        <img src="./image/ghee-removebg-preview.png" alt="">
+                    </div>
+                    <div class="myths">
+                        <p> <strong>Is it okay for a diabetic person to eat ghee?</strong> Yes. After eating, your blood glucose levels can go up and down too much (that's unhealthy). Eating ghee helps to control that.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <footer></footer>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+
+</html>
