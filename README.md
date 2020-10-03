@@ -1,5 +1,5 @@
 
-#HealthStory generator
+# HealthStory generator
 Genrate Dynamic HealtStory report for diabetes.
 ### How to run the code 
 #### 1. install the a local live server extention for your code editor
